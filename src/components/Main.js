@@ -32,7 +32,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="http://formspree.io/matt@mbtech.io">
+          <form method="post" action="https://formspree.io/matt@mbtech.io">
             <input type="text" name="_gotcha" style={{ display: "none" }} />
             <div className="field half first">
               <label htmlFor="name">Name</label>
