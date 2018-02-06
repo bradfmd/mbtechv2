@@ -24,14 +24,17 @@ class Main extends React.Component {
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
           <p>
-            We are a custom software development firm located in Birmingham, AL. more details ....
+            We are a custom software development firm located in Birmingham, AL. 
+            Our focus is solving business problems with software while creating competitive advantages for our clients.
+            Our goal is to provide accurate and timely information to decison makers so they can make the best choices for their company.
           </p>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="http://formspree.io/matt@mbtech.io">
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -39,6 +42,10 @@ class Main extends React.Component {
             <div className="field half">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" id="email" />
+            </div>
+            <div className="field">
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="_subject" id="subject" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
