@@ -22,7 +22,7 @@ class Main extends React.Component {
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
+          <span className="image main"><img src={pic03} alt="mb tech logo"/></span>
           <p>
             We are a custom software development firm located in Birmingham, AL. 
             Our focus is solving business problems with software while creating competitive advantages for our clients.
